@@ -1,0 +1,202 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Tilt+Prism&display=swap");
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  transition: all 300ms linear;
+}
+body{
+   background-color: rgb(255, 255, 255);
+}
+nav {
+ top: 0;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  z-index: 100;
+  height: 70px;
+}
+nav img {
+  height: 50px;
+}
+nav ul {
+   list-style: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(56, 56, 56, 0);
+}
+nav li {
+    box-sizing: border-box;
+  padding: 5px 30px;
+  margin: 10px;
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: bold;
+  transition: ease 300ms all;
+ background-color: #010000;
+ border-radius: 10px;
+}
+
+nav li:hover {
+  transform: scale(1.1);
+}
+nav a {
+   cursor: pointer;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/*   *********   */
+
+h1 {
+  width: 100%;
+  text-align: center;
+  color: navy;
+  font-size: 40px;
+  font-family: 'Jost', sans-serif;
+  margin: 50px;
+}
+.all-image {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.all-image img {
+  padding: 10px;
+  height: 300px;
+  width: 400px;
+   transition: 300ms;
+  opacity: 0.9;
+}
+.all-image h3 {
+  font-family: "Jost", sans-serif;
+  padding: 10px;
+  text-align: justify;
+  font-family: serif;
+}
+
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6 {
+  width: 420px;
+  position: relative;
+  justify-content: center;
+  height: auto;
+  background-color: rgb(181, 152, 66);
+  border-radius: 5px;
+  margin: 20px;
+  padding: 0px 0px 20px 0px;
+  
+}
+
+.all-image img:hover {
+  opacity: 1;
+}
+.all-image h2 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 5px;
+   font-family: "Jost", sans-serif;
+  color: rgb(255, 255, 255);
+}
+/* Contact */
+.contact {
+  background-color: rgb(56, 56, 56);
+  color: white;
+  height: 25vh;
+  width: 100vw;
+  margin-top: auto;
+}
+.contact h3 {
+  color: white;
+  font-family: "poppins";
+  text-align: center;
+  padding: 10px;
+}
+footer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-top: 7vh;
+}
+footer .logo i {
+  color: white;
+  margin: 0px 3px 0px 20px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+@keyframes move {
+  100% {
+    scale: 1.2;
+  }
+}
+footer .logo i:hover {
+  animation: move 300ms linear 1 normal forwards;
+}
+.fa-facebook {
+  background-color: blue;
+}
+.fa-twitter {
+  background-color: rgb(80, 204, 253);
+}
+.fa-instagram {
+  background-color: rgb(255, 90, 117);
+}
+.fa-youtube {
+  background-color: rgb(255, 0, 0);
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 550px) {
+
+   nav {
+    display: flex;
+  }
+  nav ul {
+    padding: 10px;
+  }
+  nav li{
+   font-size: 13px;
+  }
+
+  /*    */
+  
+  .all-image img{
+    height: 150px;
+    width: 250px;
+   padding: 0;
+   margin: 10px;
+   border: 3px solid rgb(255, 255, 255);
+  }
+
+  .image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6 {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}

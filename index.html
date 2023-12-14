@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="IMAGE/fac-icon.png" />
+    <title>Website</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="nav-bar" >
+      <img src="IMAGE/arts-science-logo.jpg" alt="college-logo" />
+      <ul>
+        <li><a href="#home" id="link-tag">Home</a></li>
+        <li><a href="#Achivements" id="link-tag">Achivement</a></li>
+        <li><a href="#Courses" id="link-tag">Courses</a></li>
+        <li><a href="gallery.html" id="link-tag">Gallery</a></li>
+        <li id="nav-admision" id="link-tag"><a href="#footer" >Admission</a></li>
+      </ul>
+
+      <div class="bar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="bar2">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </nav>
+    
+ 
+<!-- Main site start here -->
+
+    <div class="pop-container">
+      <div class="pop-up">
+        <button id="cls-pop"><span>&times;</span></button>
+        <h2>Admission Open</h2>
+        <p>
+          🎓 Admissions Open! 📚 <br />Join <q>SRM College</q> for a transformative academic
+          journey. Explore a variety of programs, world-class faculty, and
+          exceptional facilities. Apply by below admission form. Visit here for
+          details and to start your application. Your future begins here!
+        </p>
+        <p>Enter you details in <a href="#footer">admission form . . . !</a></p>
+      </div>
+    </div>
+    <div class="back" id="home">
+      <h1>Start your career here</h1>
+    </div>
+
+    <!-- Achivement  -->
+ 
+    <section class="achivement" id="Achivements">
+      <h2 class="heading">Achivement</h2>
+      <div class="achive-content">
+        <span class="a1"
+          ><img src="IMAGE/rank.png" alt="rank" />
+          <h3>Best ranked colleges in India</h3>
+        </span>
+        <span class="a1"
+          ><img src="IMAGE/teach.png  " alt="teaching" />
+          <h3>Best college award for Teaching</h3>
+        </span>
+        <span class="a1"
+          ><img src="IMAGE/universit.png" alt="university" />
+          <h3>Top university rank holders</h3>
+        </span>
+      </div>
+    </section>
+<!-- College fecilities -->
+    <section class="gallery">
+      <h2 class="heading">Facilities</h2>
+      <div class="gal-1 gal">
+        <img src="IMAGE/gal-1.jpg" alt="library" />
+        <div class="clg-content">
+          <h2>Library</h2>
+          <p>
+            The college library stands as the intellectual heart of our
+            institution, a sanctuary of learning and exploration. With an
+            extensive collection of books, journals, and digital resources, it
+            caters to the diverse academic needs of our community. Students and
+            faculty find solace and inspiration within its walls, whether for
+            rigorous research, exam preparation, or quiet study. Collaborative
+            spaces and communal work areas encourage teamwork and idea exchange,
+            while the library's vibrant events, such as author talks and book
+            clubs, foster a sense of intellectual community. In an ever-evolving
+            digital age, our library remains at the forefront, continuously
+            enhancing the educational experience for all who enter its doors.
+          </p>
+        </div>
+      </div>
+      <div class="gal-2 gal">
+        <img src="IMAGE/gal-2.jpeg" alt="computer lab" />
+        <div class="clg-content">
+          <h2>Computer Lab</h2>
+          <p>
+            Our computer lab is a cutting-edge hub for technology and
+            innovation. Equipped with state-of-the-art hardware and software, it
+            offers students a dynamic learning environment. Whether you're a
+            computer science major, graphic designer, or any discipline in
+            between, our lab provides the tools and resources you need to excel.
+            Our knowledgeable staff is always ready to assist, ensuring a smooth
+            experience. Additionally, the lab is a space for collaboration,
+            where students can work on group projects, share ideas, and build
+            technical skills. In an era where technology is paramount, our
+            computer lab is a vital resource, empowering students to thrive in
+            the digital world.
+          </p>
+        </div>
+      </div>
+    </section>
+<!-- Courses  -->
+    <div class="all-image" id="Courses">
+      <h1 class="heading">Courses</h1>
+      <div class="image">
+        <h2>Computer<br />Science</h2>
+        <h3>Bsc CS</h3>
+        <img src="IMAGE/CS.jpeg" alt="Computer Science" />
+      </div>
+      <div class="image">
+        <h2>English</h2>
+        <h3>BA English</h3>
+        <img src="IMAGE/eng-1.jpg" alt="English" class="b2" />
+      </div>
+      <div class="image">
+        <h2>Commerce</h2>
+        <h3>B Com</h3>
+        <img src="IMAGE/bcom.jpeg" alt="Commerce" />
+      </div>
+    </div>
+
+    <div class="admision">
+      <h2 class="heading">For Admission</h2>
+
+<form id="myForm"  action="#" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required autocomplete="off" /><br />
+
+    <label for="num">Phone No</label>
+    <input type="tel" name="number" id="num" required pattern="[0-9]{10}" autocomplete="off" /><br />
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required autocomplete="off" /><br />
+
+    <label for="degree">Date of birth</label>
+    <input type="date" id="dob" name="dob" required /><br />
+
+    <label for="course">Choose a Course </label>
+    <select name="courses" id="course" required>
+      <option value="" disabled selected>Select a course</option>
+      <option value="cs">CS</option>
+      <option value="maths">Maths</option>
+      <option value="bcs">BCA</option>
+      <option value="Commerce">Commerce</option>
+    </select><br />
+    
+    <div class="butt">
+      <button type="submit">Submit</button>
+      
+    </div>
+  </form>
+    </div>
+    <section class="trainer-container">
+      <h1 class="trainer-heading">Our <span>Team</span></h1>
+      <section class="trainers">
+        
+          <div class="trainer-box">
+             <div class="trainer-img">
+              <img src="IMAGE/trainer-1.jpg" alt="Trainer">
+             </div>
+             <div class="trainer-details">
+                    <h2>Anup singh</h2>
+                    <h3>CS department</h3>
+             </div>
+              <div class="trainer-contact">
+               <i class="fa-solid fa-phone"></i>
+               <i class="fa-solid fa-envelope"></i>
+               <i class="fa-solid fa-heart"></i>
+              </div>
+          </div>
+          <div class="trainer-box">
+             <div class="trainer-img">
+              <img src="IMAGE/trainer-2.jpg" alt="Trainer">
+             </div>
+             <div class="trainer-details">
+                    <h2>Ajay kumar</h2>
+                    <h3>Comerce department</h3>
+             </div>
+              <div class="trainer-contact">
+                <i class="fa-solid fa-phone"></i>
+               <i class="fa-solid fa-envelope"></i>
+               <i class="fa-solid fa-heart"></i>
+              </div>
+          </div>
+          <div class="trainer-box">
+             <div class="trainer-img">
+              <img src="IMAGE/trainer-3.jpg" alt="Trainer">
+             </div>
+             <div class="trainer-details">
+                    <h2>Dhivya Jaisankar</h2>
+                    <h3>Maths department</h3>
+             </div>
+              <div class="trainer-contact">
+                <i class="fa-solid fa-phone"></i>
+               <i class="fa-solid fa-envelope"></i>
+               <i class="fa-solid fa-heart"></i>
+              </div>
+          </div>
+          <div class="trainer-box">
+             <div class="trainer-img">
+              <img src="IMAGE/trainer-4.jpg" alt="Trainer">
+             </div>
+             <div class="trainer-details">
+                    <h2>Anas Ahamed</h2>
+                    <h3>English department</h3>
+             </div>
+              <div class="trainer-contact">
+               <i class="fa-solid fa-phone"></i>
+               <i class="fa-solid fa-envelope"></i>
+               <i class="fa-solid fa-heart" id="like"></i>
+              </div>
+          </div>
+      </section>
+    </section>
+    <!-- Contact -->
+    <footer id="footer">
+      <h3>-- Contact --</h3>
+      <div class="contact">
+        
+        <div class="logo">
+          <div class="sub-logo ">
+            <a href="https://www.facebook.com/trichysrmarts/about" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+            <span class="c-facebook">Facebook</span>
+          </a>
+          </div>
+          <div class="sub-logo" >
+            <a href="https://www.instagram.com/srmist.trichy/?hl=en" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+             <span class="c-twitter">Twitter</span>
+            </a>
+          </div>
+          <div  class="sub-logo">
+            <a href="https://www.instagram.com/srmist.trichy/?hl=en" target="_blank">
+             <i class="fa-brands fa-instagram"></i>
+             <span class="c-instagram">Instagram</span>
+            </a>
+          </div>
+          <div  class="sub-logo">
+           <a href="https://www.instagram.com/srmist.trichy/?hl=en" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+            <span class="c-youtube">Youtube</span>
+           </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+ 
+
+  <script src="JS/script.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+
+
+</html>
