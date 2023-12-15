@@ -656,6 +656,9 @@ footer .logo i:hover {
 /* Mobile */
 
 @media only screen and (max-width: 550px) {
+  html {
+  overflow-x: hidden;
+  }
   .back {
     height: 100vh;
     width: 100vw;
