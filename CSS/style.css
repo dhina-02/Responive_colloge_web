@@ -46,10 +46,11 @@ nav a {
   text-decoration: none;
 }
 #nav-admision {
-  background-color: #c63131;
-  padding: 8px;
+  background-color: #fe3030;
+  padding: 2px 8px;
   text-shadow: none;
   border-radius: 5px;
+  margin:20px;
 }
 .scroll-header {
   transition: 300ms linear;
@@ -218,7 +219,7 @@ nav a {
 }
 .clg-content {
   height: 350px;
-  padding: 10px;
+  padding: 10px 0;
   margin: 0 30px;
   display: flex;
   flex-direction: column;
@@ -563,7 +564,7 @@ footer .logo i:hover {
 
   /* Environment */
   .gallery {
-    height: 180vh;
+    height: 200vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -582,6 +583,9 @@ footer .logo i:hover {
   .gal-2 img {
     float: none;
     display: inline-block;
+  }
+.gallery .gal {
+    padding: 0;
   }
   /*  achivement  */
   .achivement {
@@ -646,7 +650,7 @@ footer .logo i:hover {
 
 @media only screen and (max-width: 550px) {
   html {
-    overflow-x: hidden;
+    width: 120%;
   }
   .back {
     height: 100vh;
@@ -718,7 +722,7 @@ footer .logo i:hover {
     height: 90vh;
   }
   .heading {
-    margin: 10px;
+    margin: 10p 0x;
   }
   .achive-content {
     display: flex;
