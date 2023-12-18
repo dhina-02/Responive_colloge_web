@@ -30,7 +30,7 @@ nav ul {
   justify-content: end;
   align-items: center;
   width: 100%;
-  background-color: rgba(56, 56, 56, 0);
+  background-color: #38383800;
 }
 nav li {
   box-sizing: border-box;
@@ -53,7 +53,6 @@ nav a {
   padding: 8px;
   text-shadow: none;
   border-radius: 5px;
-  margin-right: 30px;
 }
 .scroll-header{
   transition: 300ms linear;
@@ -215,7 +214,7 @@ nav a {
 /* Environment */
 .gallery {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 .gallery .gal {
   height: 350px;
@@ -224,6 +223,7 @@ nav a {
 .clg-content {
   height: 350px;
   padding: 10px;
+  margin:0 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -539,14 +539,13 @@ footer .logo i:hover {
     justify-content: start;
     align-items: center;
     height: 100vh;
-    
+    width: 100vw;
     position: absolute;
     display: none;
   }
   nav img {
     display: none;
   }
-
   nav li {
     display: block;
     width: 300px;
@@ -567,27 +566,29 @@ footer .logo i:hover {
   .back h1 {
     text-align: center;
   }
+  
   /* Environment */
-
   .gallery {
     height: 180vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
   }
-  .gallery .gal {
-    height: 450px;
+  .gal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
   }
-  .gal img{
-  float: none;
+  .gal-1 img {
+    float: none;
   }
-
-
+  .gal-2 img {
+    float: none;
+    display: inline-block;
+  }
   /*  achivement  */
   .achivement {
     height: 40vh;
@@ -622,7 +623,6 @@ footer .logo i:hover {
   .admision h2 {
     margin-top: 25px;
   }
-
   .achive-content {
     display: flex;
     justify-content: space-around;
@@ -635,7 +635,6 @@ footer .logo i:hover {
     height: 180px;
     width: 180px;
     box-shadow: 0px 0px 5px black;
-    font-size: px;
   }
   .a1 h3{
     font-size: 22px;
@@ -650,23 +649,15 @@ footer .logo i:hover {
   }
   
 }
-@media only screen and (max-width: 700px){
-.gallery img {
-    height: 200px;
-    width: 400px;
-  }
-}
-
-
 /* Mobile */
 
 @media only screen and (max-width: 550px) {
-  /* html {
+  html {
   overflow-x: hidden;
-  } */
+  }
   .back {
     height: 100vh;
-    
+    width: 100vw;
     background-image: url("bg.jpg");
     background-size: cover;
     background-position: center;
@@ -712,7 +703,8 @@ footer .logo i:hover {
     width: 35px;
     font-size: 25px;
   }
-  /*  */
+
+  /* Back-ground Image */
   .back h1 {
     font-size: 30px;
   }
@@ -722,12 +714,12 @@ footer .logo i:hover {
   .all-image img {
     margin: 15px;
   }
-
   .all-image {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   /* Achievement */
   .achivement {
     height: 90vh;
@@ -747,14 +739,39 @@ footer .logo i:hover {
   .a1 {
     margin-top: 10px;
   }
-  .a1 h3 { 
+  .a1 h3 {
     font-size: 18px;
   }
+
   /* Environment  */
-   .gallery {
-    height: 170vh;
+  .gallery {
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
-  
+  .gal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery img {
+    height: 200px;
+    width: 350px;
+  }
+  .gal-1 img {
+    float: none;
+  }
+  .gal p {
+    font-size: 15px;
+  }
+  .gal-2 img {
+    float: none;
+    display: inline-block;
+  }
+
   /* admission */
   .admision {
     height: 75vh;
@@ -772,6 +789,7 @@ footer .logo i:hover {
     transition: 300ms;
     box-shadow: 0px 0px 3px;
   }
+
   /* trainer */
   .trainer-container{
     height: 200vh;
