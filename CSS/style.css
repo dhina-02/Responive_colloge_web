@@ -650,7 +650,7 @@ footer .logo i:hover {
 
 @media only screen and (max-width: 550px) {
   html {
-    width: 120%;
+    width: 100%;
   }
   .back {
     height: 100vh;
