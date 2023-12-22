@@ -49,8 +49,26 @@ nav a {
   padding: 2px 8px;
   text-shadow: none;
   border-radius: 5px;
-  margin:20px;
+  margin: 20px;
 }
+/* *
+*
+*
+*
+*
+*
+
+Need to identift the problem nav show autometically whent shrink with its 
+nav bar open 
+*
+*button aligment
+*
+* - - -> font short hand property
+*
+*
+*
+*
+** */
 .scroll-header {
   transition: 300ms linear;
   background-color: #205353;
@@ -151,6 +169,19 @@ nav a {
 .back h1:hover {
   background-color: rgba(0, 0, 0, 0.297);
   opacity: 1;
+}
+/* scroll butoon */
+.home__scroll {
+  position: absolute;
+  width: 100px;
+  bottom: 5rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation: scroll 3s infinite;
+  box-shadow: 10px 10px 100px black;
+}
+.home__scroll:hover {
 }
 /* heading */
 .heading {
@@ -501,6 +532,18 @@ footer .logo i:hover {
     scale: 1.1;
   }
 }
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* ---  Media Query --- */
 
 @media only screen and (max-width: 1070px) {
@@ -521,6 +564,9 @@ footer .logo i:hover {
   }
   .bar2 i {
     cursor: pointer;
+  }
+  #nav-admision {
+    margin: 0px;
   }
   /* Remove nav background */
   .scroll-header {
@@ -549,10 +595,15 @@ footer .logo i:hover {
     border: none;
     text-align: center;
     transition: all 300ms ease-in-out;
-  }
-  nav li:hover {
-    border: none;
     background-color: #0fc29b;
+  }
+  #nav-admision {
+    background-color: #fe3030;
+    width: 300px;
+    margin: 30px 80px;
+    padding: 5px 20px;
+    text-align: center;
+    transition: all 300ms ease-in-out;
   }
   .showmenu {
     display: block;
@@ -583,7 +634,7 @@ footer .logo i:hover {
     float: none;
     display: inline-block;
   }
-.gallery .gal {
+  .gallery .gal {
     padding: 0;
   }
   /*  achivement  */
@@ -658,7 +709,9 @@ footer .logo i:hover {
   * {
     transition: 300ms;
   }
-
+  #nav-admision {
+    margin: 0;
+  }
   /* Nav bar */
 
   .bar2 {
