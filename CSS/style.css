@@ -254,12 +254,13 @@ nav a {
 /* Courses */
 .all-image {
   background-color: #ffffff;
-  height: 60vh;
+  height: 80vh;
   width: 100%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
+  
 }
 .image {
   position: relative;
@@ -385,14 +386,16 @@ nav a {
 
 /*  ********  Form  ******    */
 .admision {
-  height: 60vh;
+  height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .admision form {
   box-shadow: 0px 0px 10px rgb(48, 45, 45);
   margin: 20px auto;
-  max-height: 600px;
-  max-width: 480px;
+  max-height: 800px;
+  max-width: 600px;
   background-color: #383838;
   border-radius: 30px;
   padding: 20px;
@@ -400,20 +403,19 @@ nav a {
 }
 .admision label {
   display: inline-block;
-  width: 50%;
+  width: 40%;
   text-align: right;
   color: #ffffff;
-  font-family: 600 18px sans-serif;
-  padding: 10px;
+  font: 600 18px sans-serif;
+  padding: 15px;
 }
 input,
 select {
   box-sizing: border-box;
-  width: 200px;
+  width: 300px;
   height: 30px;
   border-radius: 5px;
   padding: 5px;
-  margin: 7px;
   background-color: #ffffff;
   outline: none;
   border: none;
@@ -471,13 +473,13 @@ footer .logo i {
   text-decoration: none;
 }
 footer .logo i:hover {
-  animation: move 300ms linear 1 normal forwards;
+  animation: move 200ms linear 1 normal forwards;
 }
 .fa-facebook {
   background-color: #0000ff;
 }
-.fa-twitter {
-  background-color: #50ccfd;
+.fa-x-twitter {
+  background-color: #030303;
 }
 .fa-instagram {
   background-color: #ff5a75;
@@ -554,8 +556,8 @@ footer .logo i:hover {
   nav li {
     display: block;
     width: 300px;
-    margin: 30px 80px;
-    padding: 5px 20px;
+    margin: 30px auto;
+    padding: 5px 30px;
     border-radius: 5px;
     border: none;
     text-align: center;
@@ -565,7 +567,7 @@ footer .logo i:hover {
   #nav-admision {
     background-color: #fe3030;
     width: 300px;
-    margin: 30px 80px;
+    margin: 30px auto;
     padding: 5px 20px;
     text-align: center;
     transition: all 300ms ease-in-out;
@@ -797,7 +799,9 @@ footer .logo i:hover {
     transition: 300ms;
     box-shadow: 0px 0px 3px;
   }
-
+input, select {
+  width: 250px;
+}
   /* trainer */
   .trainer-container {
     height: 200vh;
@@ -812,9 +816,10 @@ footer .logo i:hover {
   }
   /* Footer */
   footer{
-    height: 40vh;
+    height: 30vh;
   }
-  .logo{
+footer .logo {
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -822,7 +827,10 @@ footer .logo i:hover {
   }
   .sub-logo{
     font-size: 14px;
-    height: 50px;
+    height: 35px;
     width: 160px;
+  }
+  .footer .logo{
+    margin-top: 0vh;
   }
 }
