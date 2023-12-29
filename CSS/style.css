@@ -4,6 +4,9 @@
   margin: 0px;
   padding: 0px;
 }
+body{
+   overflow-x:hidden;
+}
 nav {
   top: 0;
   position: fixed;
@@ -31,9 +34,7 @@ nav ul {
 nav li {
   box-sizing: border-box;
   padding: 5px 30px;
-  font-size: 17px;
-  font-family: sans-serif;
-  font-weight: bold;
+  font: bold 17px sans-serif;
   transition: ease 300ms;
   text-shadow: 0px 0px 5px #000000;
 }
@@ -41,7 +42,7 @@ nav li:hover {
   transform: scale(1.1);
 }
 nav a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 #nav-admision {
@@ -51,35 +52,17 @@ nav a {
   border-radius: 5px;
   margin: 20px;
 }
-/* *
-*
-*
-*
-*
-*
-
-Need to identift the problem nav show autometically whent shrink with its 
-nav bar open 
-*
-*button aligment
-*
-* - - -> font short hand property
-*
-*
-*
-*
-** */
 .scroll-header {
   transition: 300ms linear;
   background-color: #205353;
-  box-shadow: 0px 1px 15px black;
+  box-shadow: 0px 1px 15px #000000;
 }
 .bar,
 .bar2 {
   font-size: 40px;
-  color: white;
+  color: #ffffff;
   display: none;
-  text-shadow: 0px 0px 4px black;
+  text-shadow: 0px 0px 4px #000000;
 }
 
 /* POP  UP Meassage   */
@@ -102,20 +85,17 @@ nav bar open
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
 }
-
 .pop-up h2 {
   width: 100%;
   display: inline-block;
   color: #d10101;
-  font-size: 40px;
+  font: 40px "Jost", sans-serif;
   padding: 10px;
-  font-family: "Jost", sans-serif;
 }
 .pop-up p {
   padding: 10px;
-  font-weight: 600;
+  font: 600 15px "Poppins", sans-serif;
   color: #000000;
-  font-family: "poppins";
 }
 #cls-pop {
   float: right;
@@ -147,15 +127,13 @@ nav bar open
   justify-content: center;
   align-items: center;
 }
-
 .back h1 {
-  font-size: 50px;
+  font: 50px/1 sans-serif;
   height: 100%;
   width: 100%;
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 3px rgb(255, 238, 0), 0 0 7px rgb(255, 0, 0),
-    0 0 10px rgb(251, 255, 0), 0 0 15px rgb(255, 149, 0);
-  font-family: sans-serif;
+  color: #ffffff;
+  text-shadow: 0 0 3px #ffee00, 0 0 7px #ff0000, 0 0 10px #fbff00,
+    0 0 15px #ff9500;
   text-transform: uppercase;
   letter-spacing: 3px;
   position: absolute;
@@ -165,11 +143,11 @@ nav bar open
   opacity: 0;
   transition: all 800ms;
 }
-
 .back h1:hover {
-  background-color: rgba(0, 0, 0, 0.297);
+  background-color: #0000004c;
   opacity: 1;
 }
+
 /* scroll butoon */
 .home__scroll {
   position: absolute;
@@ -179,19 +157,18 @@ nav bar open
   right: 0;
   margin: 0 auto;
   animation: scroll 3s infinite;
-  box-shadow: 10px 10px 100px black;
+  border-radius: 50%;
+  box-shadow: 0 0 3px #000000, 0 0 13px #fffefe, 0 0 20px #000000,
+    0 0 30px #646161;
 }
-.home__scroll:hover {
-}
+
 /* heading */
 .heading {
-  font-size: 40px;
+  font: bold 40px "Jost", sans-serif;
   color: #9f1515;
   margin: 20px 0;
   width: 100%;
   text-align: center;
-  font-weight: bold;
-  font-family: "Jost", sans-serif;
 }
 /* Achivemtns */
 .achivement {
@@ -227,9 +204,8 @@ nav bar open
   transform: scale(1.1);
 }
 .a1 h3 {
-  font-size: 25px;
+  font: 25px "Jost", sans-serif;
   padding: 3px;
-  font-family: "Jost", sans-serif;
 }
 .a1 img {
   width: 40%;
@@ -238,7 +214,7 @@ nav bar open
   background-color: #0fc29b;
 }
 
-/* Environment */
+/* Facilities */
 .gallery {
   height: 100vh;
   width: 100%;
@@ -246,9 +222,9 @@ nav bar open
 .gallery .gal {
   height: 350px;
   padding: 10px;
+  
 }
 .clg-content {
-  height: 350px;
   padding: 10px 0;
   margin: 0 30px;
   display: flex;
@@ -260,20 +236,21 @@ nav bar open
 }
 .clg-content h2 {
   color: #565252;
-  font-family: "Jost", sans-serif;
   font-weight: 900;
+  font-family: "Jost", sans-serif;
 }
-.gallery img {
+.gal img {
   margin: 10px;
   height: 300px;
   width: 600px;
 }
 .gal-1 img {
-  float: left;
+  float: left !important;
 }
-.gal-2 img {
-  float: right;
+ .gal-2 img {
+  float: right !important;
 }
+
 /* Courses */
 .all-image {
   background-color: #ffffff;
@@ -284,7 +261,6 @@ nav bar open
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 .image {
   position: relative;
   display: flex;
@@ -306,17 +282,13 @@ nav bar open
   margin: 30px;
   opacity: 1;
 }
-
 .all-image h3 {
   z-index: 10;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
+  font-family: bold 20px "Poppins", sans-serif;
   position: absolute;
   bottom: 0;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
+  color: #fff;
 }
-
 .all-image h2 {
   z-index: 10;
   position: absolute;
@@ -325,7 +297,7 @@ nav bar open
   align-items: center;
   height: 0;
   width: 100%;
-  color: rgb(255, 255, 255);
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: "Poppins", sans-serif;
@@ -343,17 +315,16 @@ nav bar open
 .image:hover h3 {
   display: none;
 }
-/* Trainers Details */
 
+/* Trainers Details */
 .trainer-container {
   width: 100%;
   height: 100vh;
   background-color: #383838;
 }
 .trainer-heading {
-  font-family: "Jost", sans-serif;
+  font: 35px "Jost", sans-serif;
   color: #fe3030;
-  font-size: 35px;
   text-align: center;
   padding-top: 10px;
 }
@@ -383,7 +354,7 @@ nav bar open
 .trainer-img img {
   width: 150px;
   height: 150;
-  border: 3px solid white;
+  border: 3px solid #fff;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -411,8 +382,8 @@ nav bar open
 .trainer-contact i:hover {
   color: #43ffca;
 }
-/*  ********  Form  ******    */
 
+/*  ********  Form  ******    */
 .admision {
   height: 60vh;
   width: 100%;
@@ -428,13 +399,11 @@ nav bar open
   position: relative;
 }
 .admision label {
-  font-size: 18px;
   display: inline-block;
   width: 50%;
   text-align: right;
   color: #ffffff;
-  font-weight: 600;
-  font-family: sans-serif;
+  font-family: 600 18px sans-serif;
   padding: 10px;
 }
 input,
@@ -463,26 +432,24 @@ select {
   border-radius: 8px;
   margin-top: 20px;
   background-color: #1e4d4d;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-size: 18px;
   transition: 200ms linear;
   cursor: pointer;
 }
-
 .admision button:hover {
-  background-color: rgb(145, 144, 142);
+  background-color: #91908e;
 }
-/* ----- Contact Details ------- */
 
+/* ----- Contact Details ------- */
 footer {
   background-color: #383838;
-  color: white;
+  color: #ffffff;
   height: 25vh;
   width: 100%;
   margin-top: auto;
 }
 footer h3 {
-  color: white;
   font-family: "Jost", sans-serif;
   text-align: center;
   padding: 10px;
@@ -493,34 +460,32 @@ footer .logo {
   margin-top: 7vh;
 }
 footer .logo i {
-  color: white;
   margin: 0px 3px 0px 20px;
   padding: 5px;
   cursor: pointer;
   font-size: 16px;
   border-radius: 50%;
 }
-
 .logo a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
-
 footer .logo i:hover {
   animation: move 300ms linear 1 normal forwards;
 }
 .fa-facebook {
-  background-color: blue;
+  background-color: #0000ff;
 }
 .fa-twitter {
-  background-color: rgb(80, 204, 253);
+  background-color: #50ccfd;
 }
 .fa-instagram {
-  background-color: rgb(255, 90, 117);
+  background-color: #ff5a75;
 }
 .fa-youtube {
-  background-color: rgb(255, 0, 0);
+  background-color: #ff0000;
 }
+
 /* Animation section */
 @keyframes move {
   100% {
@@ -545,7 +510,6 @@ footer .logo i:hover {
 }
 
 /* ---  Media Query --- */
-
 @media only screen and (max-width: 1070px) {
   /* Nav bar */
   .bar {
@@ -568,6 +532,7 @@ footer .logo i:hover {
   #nav-admision {
     margin: 0px;
   }
+
   /* Remove nav background */
   .scroll-header {
     background: none;
@@ -637,6 +602,7 @@ footer .logo i:hover {
   .gallery .gal {
     padding: 0;
   }
+
   /*  achivement  */
   .achivement {
     height: 40vh;
@@ -690,15 +656,15 @@ footer .logo i:hover {
   .a1:hover {
     box-shadow: 1px 1px 10px black;
   }
-  /* trainers */
 
+  /* trainers */
   .trainer-container {
     height: 110vh;
   }
 }
-/* Mobile */
 
-@media only screen and (max-width: 550px) {
+/* Mobile */
+@media only screen and (max-width: 650px) {
   .back {
     height: 100vh;
     width: 100%;
@@ -709,27 +675,23 @@ footer .logo i:hover {
   * {
     transition: 300ms;
   }
-  #nav-admision {
-    margin: 0;
-  }
   /* Nav bar */
-
   .bar2 {
     display: none;
     left: 85%;
     top: 20px;
     position: absolute;
   }
-
-  nav li {
+  nav li,
+  #nav-admision {
     display: block;
     width: 50%;
     padding: 5px;
   }
-
   .showmenu {
     display: block;
   }
+
   /* pop - up */
   .pop-up {
     width: 300px;
@@ -791,7 +753,7 @@ footer .logo i:hover {
 
   /* Environment  */
   .gallery {
-    height: 180vh;
+    height: 190vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -806,6 +768,7 @@ footer .logo i:hover {
   .gallery img {
     height: 200px;
     width: 350px;
+    margin: 10px;
   }
   .gal-1 img {
     float: none;
@@ -815,7 +778,6 @@ footer .logo i:hover {
   }
   .gal-2 img {
     float: none;
-    display: inline-block;
   }
 
   /* admission */
@@ -849,4 +811,18 @@ footer .logo i:hover {
     flex-wrap: wrap;
   }
   /* Footer */
+  footer{
+    height: 40vh;
+  }
+  .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sub-logo{
+    font-size: 14px;
+    height: 50px;
+    width: 160px;
+  }
 }
