@@ -16,12 +16,9 @@ nav {
   height: 60px;
 }
 nav img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 20px;
-  height: 40px;
-  width: 180px;
+  margin:3px;
+  height:55px;
+  width:160px;
 }
 nav ul {
   list-style: none;
@@ -75,6 +72,7 @@ nav a {
   display: none;
 }
 .pop-up {
+  text-align: center;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -97,6 +95,22 @@ nav a {
   font: 600 15px "Poppins", sans-serif;
   color: #000000;
 }
+.pop-up a{
+  text-decoration: none;
+}
+.pop-up .admission-btn{
+padding: 8px 30px;
+color: #fff;
+font: 600 15px "Poppins", sans-serif;
+background-color: #383838;
+border-radius: 5px;
+margin-top: 10px;
+transition: 300ms all linear;
+}
+.pop-up .admission-btn:hover{
+  font-size: 17px;
+}
+
 #cls-pop {
   float: right;
   font-size: 35px;
@@ -140,12 +154,9 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transition: all 800ms;
-}
-.back h1:hover {
-  background-color: #0000004c;
   opacity: 1;
+  transition: all 800ms;
+   background-color: #0000004c;
 }
 
 /* scroll butoon */
@@ -211,7 +222,7 @@ nav a {
   width: 40%;
   margin: 8px auto;
   border-radius: 50%;
-  background-color: #0fc29b;
+  background-color: #fefef3;
 }
 
 /* Facilities */
@@ -488,7 +499,10 @@ footer .logo i:hover {
   background-color: #ff0000;
 }
 
+
+
 /* Animation section */
+
 @keyframes move {
   100% {
     scale: 1.2;
@@ -510,6 +524,16 @@ footer .logo i:hover {
     transform: translateY(0);
   }
 }
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
 
 /* ---  Media Query --- */
 @media only screen and (max-width: 1070px) {

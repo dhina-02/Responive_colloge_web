@@ -18,7 +18,9 @@ nav {
   height: 70px;
 }
 nav img {
-  height: 50px;
+  margin:3px;
+  height:55px;
+  width:150px;
 }
 nav ul {
   list-style: none;
