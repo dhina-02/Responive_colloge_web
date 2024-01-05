@@ -104,7 +104,6 @@ color: #fff;
 font: 600 15px "Poppins", sans-serif;
 background-color: #383838;
 border-radius: 5px;
-margin-top: 10px;
 transition: 300ms all linear;
 }
 .pop-up .admission-btn:hover{
@@ -331,7 +330,7 @@ transition: 300ms all linear;
 /* Trainers Details */
 .trainer-container {
   width: 100%;
-  height: 100vh;
+  height: 50%;
   background-color: #383838;
 }
 .trainer-heading {
@@ -348,7 +347,7 @@ transition: 300ms all linear;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  
   flex-wrap: wrap;
 }
 .trainer-box {
@@ -605,7 +604,7 @@ footer .logo i:hover {
 
   /* Environment */
   .gallery {
-    height: 200vh;
+    height: 190vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -615,7 +614,7 @@ footer .logo i:hover {
   .gal {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
   .gal-1 img {
@@ -623,7 +622,6 @@ footer .logo i:hover {
   }
   .gal-2 img {
     float: none;
-    display: inline-block;
   }
   .gallery .gal {
     padding: 0;
@@ -690,7 +688,7 @@ footer .logo i:hover {
 }
 
 /* Mobile */
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 615px) {
   .back {
     height: 100vh;
     width: 100%;
@@ -721,7 +719,7 @@ footer .logo i:hover {
   /* pop - up */
   .pop-up {
     width: 300px;
-    height: 300px;
+    height: 330px;
   }
   .pop-up h2 {
     font-size: 25px;
@@ -737,7 +735,9 @@ footer .logo i:hover {
     width: 35px;
     font-size: 25px;
   }
-
+.pop-up p{
+  margin-bottom: 15px;
+}
   /* Back-ground Image */
   .back h1 {
     font-size: 30px;
@@ -756,7 +756,7 @@ footer .logo i:hover {
 
   /* Achievement */
   .achivement {
-    height: 90vh;
+    height: 100vh;
   }
   .heading {
     margin: 10p 0x;
@@ -771,7 +771,9 @@ footer .logo i:hover {
     margin: 0;
   }
   .a1 {
-    margin-top: 10px;
+    height: 200px;
+    width: 250px;
+    margin-top: 20px;
   }
   .a1 h3 {
     font-size: 18px;
@@ -779,16 +781,16 @@ footer .logo i:hover {
 
   /* Environment  */
   .gallery {
-    height: 190vh;
+    height: 160vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   .gal {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
   .gallery img {
