@@ -18,7 +18,10 @@ Welcome to the College Website project! This project aims to create a user-frien
 ![Screenshot (319)](https://github.com/dhina-02/check-site/assets/141801163/304cfc39-5a42-4757-bb0c-39957701e5e7)
 
 ## Mobile view
-![Screenshot (313)](https://github.com/dhina-02/check-site/assets/141801163/beca5cb1-6e69-4df7-887c-4b9352de0e69)
+
+![Screenshot (322)](https://github.com/dhina-02/check-site/assets/141801163/eceb680c-feb8-4f7b-9fa0-2d97fb433076)
+
+
 ![Screenshot (314)](https://github.com/dhina-02/check-site/assets/141801163/0d0b8d24-3054-4685-9fa1-f3ed0794e853)
 
 
