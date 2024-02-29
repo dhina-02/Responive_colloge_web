@@ -4,27 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
-   <link rel="shortcut icon" href="IMAGE/logo-2.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="IMAGE/logo-2.jpg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="IMAGE/arts-science-logo.png" />
     <title>Website</title>
   </head>
   <body>
     <!-- Nav Bar -->
-    <nav class="nav-bar" >
+    <nav class="nav-bar">
       <img src="IMAGE/logo.png" alt="college-logo" />
       <ul>
-        <li><a href="#home" id="link-tag">Home</a></li>
-        <li><a href="#Achivements" id="link-tag">Achivement</a></li>
-        <li><a href="#Courses" id="link-tag">Courses</a></li>
-        <li><a href="gallery.html" id="link-tag">Gallery</a></li>
-        <li id="nav-admision" id="link-tag"><a href="admmision.html" >Admission</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Achivements">Achivement</a></li>
+        <li><a href="#Courses">Courses</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li id="nav-admision">
+          <a href="admmision.html">Admission</a>
+        </li>
       </ul>
 
       <div class="bar">
@@ -34,54 +33,57 @@
         <i class="fa-solid fa-xmark"></i>
       </div>
     </nav>
-    
- 
-<!-- Main site start here -->
+
+    <!-- Main site start here -->
 
     <div class="pop-container">
       <div class="pop-up">
         <button id="cls-pop"><span>&times;</span></button>
         <h2>Admission Open</h2>
         <p>
-          &#x1F393; Admissions Open! &#x1F393; <br />Join <q>ABC College</q> for a transformative academic
-          journey. Explore a variety of programs, world-class faculty, and
-          exceptional facilities. Apply by below admission form. Visit here for
-          details and to start your application.
-          Enter you details in <a href="admmision.html">admission form  !</a>
+          &#x1F393; Admissions Open! &#x1F393; <br />Join <q>ABC College</q> for
+          a transformative academic journey. Explore a variety of programs,
+          world-class faculty, and exceptional facilities. Apply by below
+          admission form. Visit here for details and to start your application.
+          Enter you details in <a href="admmision.html">admission form !</a>
         </p>
-          <a class="admission-btn" href="admmision.html">For Admission</a>
+        <a class="admission-btn" href="admmision.html">For Admission</a>
       </div>
     </div>
     <div class="back" id="home">
       <h1>Start your career here</h1>
       <a href="#Achivements">
-              <img src="IMAGE\scroll-down-arrow.jpg" alt="scroll-down-arrow" class="home__scroll">
-            </a>
+        <img
+          src="IMAGE/scroll-down-arrow.jpg"
+          alt="scroll-down-arrow"
+          class="home__scroll"
+        />
+      </a>
     </div>
 
     <!-- Achivement  -->
- 
+
     <section class="achivement" id="Achivements">
       <h2 class="heading">Achivement</h2>
       <div class="achive-content">
-        <span class="a1"
-          ><img src="IMAGE/achivement-1.png" alt="rank" />
+        <div class="a1">
+          <img src="IMAGE/achivement-1.png" alt="rank" />
           <h3>Best ranked colleges in India</h3>
-        </span>
-        <span class="a1"
-          ><img src="IMAGE/achivement-2.png  " alt="teaching" />
+        </div>
+        <div class="a1">
+          <img src="IMAGE/achivement-2.png  " alt="teaching" />
           <h3>Best teaching award</h3>
-        </span>
-        <span class="a1"
-          ><img src="IMAGE/achivement-3.png" alt="university" />
+        </div>
+        <div class="a1">
+          <img src="IMAGE/achivement-3.png" alt="university" />
           <h3>Top university rank holders</h3>
-        </span>
+        </div>
       </div>
     </section>
-<!-- College fecilities -->
+    <!-- College fecilities -->
     <section class="gallery">
       <div>
-      <h2 class="heading">Facilities</h2>
+        <h2 class="heading">Facilities</h2>
       </div>
       <div class="gal-1 gal">
         <img src="IMAGE/facility-1.jpg" alt="library" />
@@ -96,7 +98,7 @@
             rigorous research, exam preparation, or quiet study. Collaborative
             spaces and communal work areas encourage teamwork and idea exchange,
             while the library's vibrant events, such as author talks and book
-            clubs, foster a sense of intellectual community. 
+            clubs, foster a sense of intellectual community.
           </p>
         </div>
       </div>
@@ -120,7 +122,7 @@
         </div>
       </div>
     </section>
-<!-- Courses  -->
+    <!-- Courses  -->
     <div class="all-image" id="Courses">
       <h1 class="heading">Courses</h1>
       <div class="image">
@@ -140,110 +142,99 @@
       </div>
     </div>
 
-
     <section class="trainer-container">
       <h1 class="trainer-heading">Our <span>Team</span></h1>
       <section class="trainers">
-        
-          <div class="trainer-box">
-             <div class="trainer-img">
-              <img src="IMAGE/trainer-1.jpg" alt="Trainer">
-             </div>
-             <div class="trainer-details">
-                    <h2>Anup singh</h2>
-                    <h3>CS department</h3>
-             </div>
-              <div class="trainer-contact">
-               <i class="fa-solid fa-phone"></i>
-               <i class="fa-solid fa-envelope"></i>
-               <i class="fa-solid fa-heart"></i>
-              </div>
+        <div class="trainer-box">
+          <div class="trainer-img">
+            <img src="IMAGE/trainer-1.jpg" alt="Trainer" />
           </div>
-          <div class="trainer-box">
-             <div class="trainer-img">
-              <img src="IMAGE/trainer-2.jpg" alt="Trainer">
-             </div>
-             <div class="trainer-details">
-                    <h2>Ajay kumar</h2>
-                    <h3>Comerce department</h3>
-             </div>
-              <div class="trainer-contact">
-                <i class="fa-solid fa-phone"></i>
-               <i class="fa-solid fa-envelope"></i>
-               <i class="fa-solid fa-heart"></i>
-              </div>
+          <div class="trainer-details">
+            <h2>Anup singh</h2>
+            <h3>CS department</h3>
           </div>
-          <div class="trainer-box">
-             <div class="trainer-img">
-              <img src="IMAGE/trainer-3.jpg" alt="Trainer">
-             </div>
-             <div class="trainer-details">
-                    <h2>Dhivya Jaisankar</h2>
-                    <h3>Maths department</h3>
-             </div>
-              <div class="trainer-contact">
-                <i class="fa-solid fa-phone"></i>
-               <i class="fa-solid fa-envelope"></i>
-               <i class="fa-solid fa-heart"></i>
-              </div>
+          <div class="trainer-contact">
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-heart"></i>
           </div>
-          <div class="trainer-box">
-             <div class="trainer-img">
-              <img src="IMAGE/trainer-4.jpg" alt="Trainer">
-             </div>
-             <div class="trainer-details">
-                    <h2>Anas Ahamed</h2>
-                    <h3>English department</h3>
-             </div>
-              <div class="trainer-contact">
-               <i class="fa-solid fa-phone"></i>
-               <i class="fa-solid fa-envelope"></i>
-               <i class="fa-solid fa-heart" id="like"></i>
-              </div>
+        </div>
+        <div class="trainer-box">
+          <div class="trainer-img">
+            <img src="IMAGE/trainer-2.jpg" alt="Trainer" />
           </div>
+          <div class="trainer-details">
+            <h2>Ajay kumar</h2>
+            <h3>Comerce department</h3>
+          </div>
+          <div class="trainer-contact">
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </div>
+        <div class="trainer-box">
+          <div class="trainer-img">
+            <img src="IMAGE/trainer-3.jpg" alt="Trainer" />
+          </div>
+          <div class="trainer-details">
+            <h2>Dhivya Jaisankar</h2>
+            <h3>Maths department</h3>
+          </div>
+          <div class="trainer-contact">
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </div>
+        <div class="trainer-box">
+          <div class="trainer-img">
+            <img src="IMAGE/trainer-4.jpg" alt="Trainer" />
+          </div>
+          <div class="trainer-details">
+            <h2>Anas Ahamed</h2>
+            <h3>English department</h3>
+          </div>
+          <div class="trainer-contact">
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-heart" id="like"></i>
+          </div>
+        </div>
       </section>
     </section>
     <!-- Contact -->
     <footer id="footer">
       <h3>-- Contact --</h3>
       <div class="contact">
-        
         <div class="logo">
-          <div class="sub-logo ">
+          <div class="sub-logo">
             <a href="https://www.facebook.com/" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
-            <span >Facebook</span>
-          </a>
+              <i class="fa-brands fa-facebook"></i>
+              <span>Facebook</span>
+            </a>
           </div>
-          <div class="sub-logo" >
+          <div class="sub-logo">
             <a href="https://twitter.com/i/flow/login" target="_blank">
               <i class="fa-brands fa-x-twitter"></i>
-             <span >X .com </span>
+              <span>X .com </span>
             </a>
           </div>
-          <div  class="sub-logo">
+          <div class="sub-logo">
             <a href="https://www.instagram.com/" target="_blank">
-             <i class="fa-brands fa-instagram"></i>
-             <span >Instagram</span>
+              <i class="fa-brands fa-instagram"></i>
+              <span>Instagram</span>
             </a>
           </div>
-          <div  class="sub-logo">
-           <a href="https://www.youtube.com/" target="_blank">
-            <i class="fa-brands fa-youtube"></i>
-            <span >Youtube</span>
-           </a>
+          <div class="sub-logo">
+            <a href="https://www.youtube.com/" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+              <span>Youtube</span>
+            </a>
           </div>
         </div>
       </div>
     </footer>
+    <script src="JS/script.js"></script>
   </body>
- 
-
-  <script src="JS/script.js"> </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   
-
-
 </html>
