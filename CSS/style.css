@@ -226,28 +226,33 @@ transition: 300ms all linear;
 
 /* Facilities */
 .gallery {
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
 .gallery .gal {
-  height: 350px;
+  height: auto;
+  display: inline-block;
+  margin: 0 auto ;
   padding: 10px;
   
 }
 .clg-content {
-  padding: 10px 0;
-  margin: 0 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #797373;
-  font-weight: 500;
+  height: 100%;
+  padding: 3rem 10px;
+ 
+  
 }
 .clg-content h2 {
+  text-align: center;
   color: #565252;
   font-weight: 900;
   font-family: "Jost", sans-serif;
+}
+.clg-content p {
+   color: #797373;
+  font-weight: 500;
+  font-size: 14px;
+  font-family:"Poppins", sans-serif;
 }
 .gal img {
   margin: 10px;
@@ -295,9 +300,9 @@ transition: 300ms all linear;
 }
 .all-image h3 {
   z-index: 10;
-  font-family: bold 20px "Poppins", sans-serif;
+  font-family:"Poppins", sans-serif;
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
   color: #fff;
 }
 .all-image h2 {
@@ -604,19 +609,23 @@ footer .logo i:hover {
 
   /* Environment */
   .gallery {
-    height: 190vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
-  .gal {
-    display: flex;
+  .clg-content{
+    padding: 10px;
+  }
+   .gallery .gal{
+     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-  }
+   }
+
   .gal-1 img {
     float: none;
   }
@@ -624,7 +633,7 @@ footer .logo i:hover {
     float: none;
   }
   .gallery .gal {
-    padding: 0;
+    padding:20px 0;
   }
 
   /*  achivement  */
@@ -781,13 +790,14 @@ footer .logo i:hover {
 
   /* Environment  */
   .gallery {
-    height: 160vh;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
   .gal {
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
